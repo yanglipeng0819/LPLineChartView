@@ -38,15 +38,15 @@
     
     LPLineChartModel *model3 = [LPLineChartModel modelWithValueArray:@[@22,@23,@24,@20,@27,@26,@29,@24,@20] lineWidth:3.0 lineColor:[UIColor yellowColor] joinStyle:LPLineJoinNone pointColor:[UIColor brownColor] pointWidth:5.0 edge:UIEdgeInsetsMake(30, 20, 30, 20) textSituation:LPTextSituationBottom prefixString:@"a" suffixString:@"b" textPadding:20 textAttribute:@{NSForegroundColorAttributeName:[UIColor magentaColor],NSFontAttributeName:[UIFont systemFontOfSize:9]}];
     
-    LPMoreLineChartView *view3 = [LPMoreLineChartView drawMoreLineViewWith:@[model1,model2,model3]];
+    LPMoreLineChartView *view4 = [LPMoreLineChartView drawMoreLineViewWith:@[model1,model2,model3]];
     
-    view3.frame  = CGRectMake(0, 500, self.view.frame.size.width, 150);
-    view3.backgroundColor = [UIColor lightGrayColor];
+    view4.frame  = CGRectMake(0, 500, self.view.frame.size.width, 150);
+    view4.backgroundColor = [UIColor lightGrayColor];
     
-    [self.view addSubview: view3];
+    [self.view addSubview: view4];
     
     UILabel *label3 = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 20)];
-    [view3 addSubview:label3];
+    [view4 addSubview:label3];
     label3.text = @"多折线示例";
     
 }
