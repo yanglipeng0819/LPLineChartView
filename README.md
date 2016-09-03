@@ -65,3 +65,4 @@ code
     view4.backgroundColor = [UIColor lightGrayColor];
     
     [self.view addSubview: view4];
+    
